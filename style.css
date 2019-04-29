@@ -1,0 +1,43 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	box-sizing: inherit;
+}
+
+:root {
+	--text-color: #333;
+	--window-border-radius: 6px;
+	--button-border-radius: 4px;
+	--input-border-radius: 4px;
+	--font-size: 14px;
+}
+
+.window {
+	position: absolute;
+	top: 5px;
+	background-color: transparent;
+}
+
+.window-content {
+	background-color: transparent;
+	padding: 10px;
+	flex-direction: column;
+}
+
+::-webkit-scrollbar {
+	background: #f4f4f4;
+	width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #bbb;
+}
+
+.closed {
+	min-height: 0;
+}
